@@ -1,0 +1,17 @@
+langchain==0.3.26
+flask==3.1.1
+sentence-transformers==4.1.0
+pypdf==5.6.1
+python-dotenv==1.1.0
+langchain-pinecone==0.2.8
+langchain-openai==0.3.24
+langchain-community==0.3.26
+-e .
+
+# - e. có nghĩa là cài đặt project hiện tại ở chế độ editable (develop mode) 
+# trong đó -e viết tắt của --editable
+# dấu . nghĩa là thư mục hiện tại (là project hiện tại đang ở)
+# tác dụng cả editable mode:
+# Khi thay đổi code trong thư mục project thì python sẽ dùng code đó ngay lập tức, không cần chạy lại lệnh pip install
+# nếu có dòng - e. thì pip sẽ đọc file setup.py hoặc pyproject.toml trong thư mục gốc để đăng ký package medibot vào python
+
